@@ -29,21 +29,26 @@ La idea de este programa es automatizar la organización de los archivos de una 
  folder = Path(" test-folder ")
 ```
 aquí se puede sustituir por la ubicación de la carpeta que se quiere ordenar, (en Windows es importante utilizar \\ ya que \ altera la cadena) para no afectar la cadena, por ejemplo:
+```Python
 > folder = Path(" C:\\Users\\User\\Documents ")
-
+```
 2. Una vez especificado la carpeta se puede ejecutar el programa y se obtendrá esto en terminal:
 > Ingresa el nombre de tu categoría o deja en blanco para terminar: 
 
 aquí el usuario puede agregar el nombre de su carpeta para su categoría personalizada, también puede pulsar *Enter* para cancelar este procedimiento y proseguir con el acomodo por defecto de los archivos.
-> *Ejemplo*:
->
-> Ingresa el nombre de tu categoría o deja en blanco para terminar:  **Arduino**
+ **Ejemplo**:
+
+ ``Ingresa el nombre de tu categoría o deja en blanco para terminar: Arduino ``
 
 3. Si presionamos Enter sin escribir un nombre de categoría, el programa procederá directamente con la organización predeterminada. Si escribimos el nombre de una categoría, el programa nos preguntará qué extensiones queremos asignarle.
->Ingresa la extensión que admite tu categoría o pulsa enter para terminar: **.ino**
->Ingresa la extensión que admite tu categoría o pulsa enter para terminar:
->
+
+``Ingresa la extensión que admite tu categoría o pulsa enter para terminar: .ino``
+
+``Ingresa la extensión que admite tu categoría o pulsa enter para terminar:``
+
+
 >**Nota**: Es importante utilizar el punto (.) en el texto que ingresemos ya que el programa compara el texto que entregamos con la terminación de la ruta del archivo, sin el punto el programa puede funcionar de manera errónea.
+
 
 Una vez terminado este procedimiento correctamente la carpeta deseada habrá sido reorganizada priorizando las categorías dadas por el usuario, en este caso si se encuentra un documento con extensión .ino , este será enviado a la carpeta Arduino, si no se le asigna esta extensión a esta carpeta el programa .ino será enviado a la carpeta *Otros*
 >**Nota**: Una vez asignadas las extensiones el programa volverá a preguntar si deseamos agregar otra categoría, de ser así podemos repetir el procedimiento, si no podemos pulsar enter.
@@ -58,10 +63,13 @@ folder = Path("test-folder")
 
 Para poder crear las categorías debo de asignarle a la carpeta Tarea la extensión .pdf para esto al ejecutar el programa haré lo siguiente
 
->Ingresa el nombre de tu categoría o deja en blanco para terminar: Tareas
->Ingresa la extensión que admite tu categoría o pulsa enter para terminar:.pdf
->Ingresa la extensión que admite tu categoría o pulsa enter para terminar:
->Ingresa el nombre de tu categoría o deja en blanco para terminar: 
+``Ingresa el nombre de tu categoría o deja en blanco para terminar: Tareas``
+
+``Ingresa la extensión que admite tu categoría o pulsa enter para terminar:.pdf``
+
+``Ingresa la extensión que admite tu categoría o pulsa enter para terminar:``
+
+``Ingresa el nombre de tu categoría o deja en blanco para terminar: ``
 
 Este es el resultado de la carpeta
 ![Carpeta organizada](Imagenes%20de%20ejemplo/Carpeta%20organizada.png)
